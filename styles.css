@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'OldBaskerville';
+    src: url('./fonts/Baskervville-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+background-color: #A4E5E0;
+font-family: 'OldBaskerville', serif;
+text-align: center;
+padding: 1rem;
+}
+
+button {
+font-family: 'OldBaskerville', serif;
+font-size: 20px;
+background-color: #116062;
+color: white;
+border-radius: 10vw;
+padding: 1vw;
+outline-style: none;
+border: none;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+    height: 400px;
+}
+.swipe-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.location-card {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1vh;
+}
+.location-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+button:hover {
+    background: #555;
+}
